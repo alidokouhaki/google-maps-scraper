@@ -1,47 +1,84 @@
-# Google Maps Directory Scraper
+<div align="center">
 
-This is a simple and powerful tool for extracting business information from Google Maps. By entering a city name and business category, you can get a clean, organized list of businesses in an Excel file.
+# 📍 Google Maps Directory Scraper
 
-## Prerequisites
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B.svg?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Playwright](https://img.shields.io/badge/Playwright-2EAD33.svg?logo=playwright&logoColor=white)](https://playwright.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Before running the application, make sure you have the following installed on your system:
-1. **Python** version 3.10 or higher
+*A simple, powerful, and elegant tool for extracting business information directly from Google Maps into organized Excel files.*
 
-## Installation and Setup
+</div>
 
-First, clone or download the project and open its folder.
-Then, open your terminal (Terminal / CMD / PowerShell) in the project directory and run the following commands to install the dependencies:
+---
 
-```bash
-pip install -r requirements.txt
-playwright install chromium
-```
+## ✨ Features
 
-## How to Use
+- 🏢 **Effortless Extraction:** Extract comprehensive business data just by specifying a city and a category.
+- 🎨 **Modern UI:** Built with Streamlit for a clean, user-friendly, and interactive experience.
+- 📊 **Excel Export:** Automatically formats and exports the extracted data into a beautifully structured `.xlsx` file.
+- ⚡ **Automated Navigation:** Uses Playwright for fast browsing and automated interactions.
 
-This tool features a simple and modern web-based user interface. To run it, enter the following command in your terminal:
+---
 
-```bash
-streamlit run app.py
-```
+## 📋 What It Extracts
 
-After running this command, a web page will open in your browser. On this page:
-1. **City:** Enter your desired city name (e.g., New York, Isfahan).
-2. **Business Category:** Enter the type of business (e.g., Restaurant, Accounting firm).
-3. Click the **Start Scraping** button.
+For every business found, the scraper retrieves:
 
-The scraper will automatically open a browser and collect information for all relevant businesses.
+| Data Point | Description |
+| :--- | :--- |
+| 🏷️ **Name** | The official business name |
+| ⭐ **Rating** | Average Google Maps rating |
+| 💬 **Reviews** | Total number of reviews |
+| 📂 **Category** | Primary business category |
+| 📍 **Address** | Full physical address |
+| 📞 **Phone** | Contact phone number |
+| 🌐 **Website** | Link to the business website |
+| 🕒 **Status** | Current operating status (Open/Closed) |
 
-## Output
+---
 
-Once finished, an Excel file containing the following information will be ready for download:
-- Business Name
-- Rating
-- Review Count
-- Category
-- Address
-- Phone Number
-- Website URL
-- Open Status
+## ⚙️ Prerequisites
 
-You can download the output file directly from the web page by clicking the "Download Excel File" button.
+Before you begin, ensure you have met the following requirements:
+- 🐍 **Python 3.10** or higher installed on your machine.
+
+---
+
+## 🚀 Installation & Setup
+
+1. **Clone the repository** (or download the ZIP file):
+   ```bash
+   git clone https://github.com/alidokouhaki/google-maps-scraper.git
+   cd google-maps-scraper
+   ```
+
+2. **Install the required Python packages**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Install the Playwright browser binaries**:
+   ```bash
+   playwright install chromium
+   ```
+
+---
+
+## 🎮 How to Use
+
+1. Launch the Streamlit application from your terminal:
+   ```bash
+   streamlit run app.py
+   ```
+2. A web interface will automatically open in your default browser.
+3. Enter the **City** (e.g., *Isfahan*, *New York*) and **Business Category** (e.g., *Restaurant*, *Accounting firm*).
+4. Click **🚀 Start Scraping** and wait for the magic to happen.
+5. Once finished, click **📥 Download Excel File** to get your neatly formatted data!
+
+---
+
+<div align="center">
+  <i>Developed with ❤️ for data enthusiasts and researchers.</i>
+</div>
